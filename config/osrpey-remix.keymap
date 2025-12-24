@@ -15,6 +15,20 @@
             bindings = <&kp INSERT>;
             key-positions = <40 41>;
         };
+
+        select_line {
+            bindings = <&select_line>;
+            key-positions = <24 25>;
+        };
+    };
+
+    macros {
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "SELECT_LINE";
+        };
     };
 
     keymap {
