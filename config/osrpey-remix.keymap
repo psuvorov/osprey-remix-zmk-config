@@ -14,21 +14,25 @@
         insert {
             bindings = <&kp INSERT>;
             key-positions = <40 41>;
+            layers = <0>;
         };
 
         select_line {
             bindings = <&select_line>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         shit_escape {
             bindings = <&kp LS(ESCAPE)>;
             key-positions = <0 1 2>;
+            layers = <0>;
         };
     };
 
