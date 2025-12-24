@@ -11,19 +11,9 @@
     combos {
         compatible = "zmk,combos";
 
-        print_screen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <25 26 27>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <18 19>;
-        };
-
-        minus2 {
-            bindings = <&kp MINUS>;
-            key-positions = <17 16>;
+        insert {
+            bindings = <&kp INSERT>;
+            key-positions = <40 41>;
         };
     };
 
@@ -45,7 +35,7 @@
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7            &kp N8          &kp N9          &kp N0           &kp MINUS          &kp EQUAL
 &trans  &none   &none   &none   &none   &none   &kp HOME          &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp END            &none
 &trans  &none   &none   &none   &none   &none   &kp LEFT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_BRACKET  &kp ESCAPE
-                        &trans  &trans  &trans  &mo 3             &kp INSERT      &trans
+                        &trans  &trans  &trans  &mo 3             &trans          &trans
             >;
 
             display-name = "Raise";
