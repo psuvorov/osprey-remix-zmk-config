@@ -20,6 +20,16 @@
             bindings = <&select_line>;
             key-positions = <24 25>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        shit_escape {
+            bindings = <&kp LS(ESCAPE)>;
+            key-positions = <0 1 2>;
+        };
     };
 
     macros {
