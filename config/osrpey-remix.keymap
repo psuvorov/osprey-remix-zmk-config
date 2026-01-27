@@ -78,10 +78,10 @@
 
         left_layer {
             bindings = <
-&trans  &none  &none  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(LEFT)  &kp LA(RIGHT)   &none           &none            &none              &trans
-&trans  &none  &none  &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME      &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp LEFT_BRACKET   &trans
-&trans  &none  &none  &none   &kp LESS_THAN         &kp GREATER_THAN       &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_BRACKET  &trans
-                      &trans  &trans                &trans                 &mo 3         &trans          &trans
+&kp TILDE  &kp AT_SIGN           &kp HASH               &kp DOLLAR       &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp ASTERISK    &kp GRAVE       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none
+&trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME       &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp LA(LEFT)       &trans
+&trans     &kt LESS_THAN         &kt GREATER_THAN       &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp LA(RIGHT)      &trans
+                                                        &trans           &trans            &trans             &mo 3          &trans          &trans
             >;
 
             display-name = "Left";
@@ -106,17 +106,6 @@
 &none  &none  &none  &none   &none        &none   &none         &sys_reset    &none         &none  &none  &none
                      &trans  &trans       &trans  &trans        &trans        &trans
             >;
-        };
-
-        num_layer {
-            bindings = <
-&trans  &none  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &trans
-&trans  &none  &kp PERCENT      &kp CARET    &kp AMPERSAND     &kp UNDERSCORE     &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
-&trans  &none  &kp TILDE        &kp GRAVE    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &trans
-                                &trans       &trans            &trans             &trans     &kp NUMBER_0  &none
-            >;
-
-            label = "Num";
         };
     };
 };
