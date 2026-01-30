@@ -52,6 +52,11 @@
             key-positions = <7 8>;
             layers = <0>;
         };
+
+        go_to_adjust {
+            bindings = <&mo 3>;
+            key-positions = <36 38 37>;
+        };
     };
 
     macros {
