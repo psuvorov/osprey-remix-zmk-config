@@ -29,38 +29,9 @@
             layers = <0>;
         };
 
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <19 18>;
-            layers = <0>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
-
-        page_up {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        page_down {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
         go_to_adjust {
             bindings = <&mo 3>;
             key-positions = <36 38 37>;
-        };
-
-        to_left_layer {
-            bindings = <&tog 1>;
-            key-positions = <0 1>;
         };
     };
 
@@ -70,13 +41,6 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
-        };
-
-        not_equal: not_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL &kp EQUAL>;
-            label = "NOT_EQUAL";
         };
     };
 
