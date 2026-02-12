@@ -33,6 +33,11 @@
             bindings = <&mo 3>;
             key-positions = <36 38 37>;
         };
+
+        toggle_nav_layer {
+            bindings = <&tog 4>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
