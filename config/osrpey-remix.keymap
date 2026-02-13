@@ -14,7 +14,6 @@
         insert {
             bindings = <&kp INSERT>;
             key-positions = <40 41>;
-            layers = <0>;
         };
 
         select_line {
