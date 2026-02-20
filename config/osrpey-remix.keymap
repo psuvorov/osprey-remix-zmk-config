@@ -48,6 +48,26 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp HOME>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL)>;
+        };
+
+        new_behavior2: new_behavior2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BEHAVIOR2";
+            bindings = <&kp END>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -95,10 +115,10 @@
 
         nav_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5   &kp NUMBER_6  &kp N7     &kp N8    &kp NUMBER_9    &kp NUMBER_0    &kp ESCAPE
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp F11       &none      &kp HOME  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN
-&trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp F12       &kp LC(Z)  &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-                                    &trans        &trans        &trans   &trans        &trans     &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8          &kp NUMBER_9    &kp NUMBER_0     &none
+&trans  &none         &none         &none         &none         &none   &none         &none   &new_behavior2  &kp UP_ARROW    &new_behavior2   &kp RIGHT_CONTROL
+&trans  &none         &none         &none         &none         &none   &none         &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+                                    &trans        &trans        &trans  &trans        &trans  &trans
             >;
 
             label = "Navigation";
