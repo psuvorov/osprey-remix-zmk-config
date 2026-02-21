@@ -49,22 +49,40 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        home_left_arrow: home_left_arrow {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp HOME>, <&kp PAGE_UP>;
+            label = "HOME_LEFT_ARROW";
+            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL)>;
+            mods = <(MOD_RSFT)>;
         };
 
-        new_behavior2: new_behavior2 {
+        end_right_arrow: end_right_arrow {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR2";
-            bindings = <&kp END>, <&kp PAGE_DOWN>;
+            label = "END_RIGHT_ARROW";
+            bindings = <&kp RIGHT_ARROW>, <&kp END>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL)>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        page_up_up_arrow: page_up_up_arrow {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAGE_UP_UP_ARROW";
+            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        page_down_down_arrow: page_down_down_arrow {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAGE_DOWN_DOWN_ARROW";
+            bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
@@ -115,9 +133,9 @@
 
         nav_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8          &kp NUMBER_9    &kp NUMBER_0     &none
-&trans  &none         &none         &none         &none         &none   &none         &none   &new_behavior2  &kp UP_ARROW    &new_behavior2   &kp RIGHT_CONTROL
-&trans  &none         &none         &none         &none         &none   &none         &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8            &kp NUMBER_9           &kp NUMBER_0      &none
+&trans  &none         &none         &none         &none         &none   &none         &none   &none             &page_up_up_arrow      &none             &none
+&trans  &none         &none         &none         &none         &none   &none         &none   &home_left_arrow  &page_down_down_arrow  &end_right_arrow  &trans
                                     &trans        &trans        &trans  &trans        &trans  &trans
             >;
 
