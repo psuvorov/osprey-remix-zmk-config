@@ -55,7 +55,7 @@
             bindings = <&kp LEFT_ARROW>, <&kp HOME>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RALT)>;
         };
 
         end_right_arrow: end_right_arrow {
@@ -64,7 +64,7 @@
             bindings = <&kp RIGHT_ARROW>, <&kp END>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RALT)>;
         };
 
         page_up_up_arrow: page_up_up_arrow {
@@ -73,7 +73,7 @@
             bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RALT)>;
         };
 
         page_down_down_arrow: page_down_down_arrow {
@@ -82,7 +82,52 @@
             bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f1_1: f1_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F1_1";
+            bindings = <&kp NUMBER_1>, <&kp F1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f2_2: f2_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F2_2";
+            bindings = <&kp NUMBER_2>, <&kp F2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f3_3: f3_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F3_3";
+            bindings = <&kp NUMBER_3>, <&kp F3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f4_4: f4_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F4_4";
+            bindings = <&kp NUMBER_4>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f5_5: f5_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F5_5";
+            bindings = <&kp N5>, <&kp F5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
         };
     };
 
@@ -133,10 +178,10 @@
 
         nav_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8            &kp NUMBER_9           &kp NUMBER_0      &none
-&trans  &none         &none         &none         &none         &none   &none         &none   &none             &page_up_up_arrow      &none             &none
-&trans  &none         &none         &none         &none         &none   &none         &none   &home_left_arrow  &page_down_down_arrow  &end_right_arrow  &trans
-                                    &trans        &trans        &trans  &trans        &trans  &trans
+&trans  &f1_1  &f2_2  &f3_3   &f4_4   &f5_5   &kp NUMBER_6  &kp N7  &kp N8            &kp NUMBER_9           &kp NUMBER_0      &none
+&trans  &none  &none  &none   &none   &none   &none         &none   &none             &page_up_up_arrow      &none             &none
+&trans  &none  &none  &none   &none   &none   &none         &none   &home_left_arrow  &page_down_down_arrow  &end_right_arrow  &mt RIGHT_ALT ESCAPE
+                      &trans  &trans  &trans  &trans        &trans  &trans
             >;
 
             label = "Navigation";
