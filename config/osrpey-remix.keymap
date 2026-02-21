@@ -29,12 +29,12 @@
         };
 
         go_to_adjust {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <36 38 37>;
         };
 
         toggle_nav_layer {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <0 1>;
         };
     };
@@ -57,30 +57,19 @@
 &kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y        &kp U          &kp I         &kp O    &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
 &kp LCTRL       &kp A  &kp S  &kp D         &kp F         &kp G        &kp H        &kp J          &kp K         &kp L    &kp SEMI             &mt RCTRL SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N        &kp M          &kp COMMA     &kp DOT  &mt BACKSLASH SLASH  &mt RIGHT_SHIFT ESCAPE
-                              &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &lt 4 DELETE
+                              &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 ENTER  &kp BACKSPACE  &lt 3 DELETE
             >;
         };
 
-        left_layer {
+        sym_num_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET         &kp AMPERSAND      &kp ASTERISK          &none                  &none      &none
-&trans     &none            &none        &none     &none       &none        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL
-&trans     &none            &none        &none     &none       &none        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH  &kp NON_US_BACKSLASH
-                                         &trans    &trans      &kp SPACE    &kp SPACE         &trans             &trans
+&kp GRAVE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH       &kp DOLLAR            &kp PERCENT            &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp NUMBER_0
+&trans     &kp CARET         &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
+&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN      &kp NON_US_BACKSLASH   &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                                                &trans         &trans                &kp SPACE              &kp SPACE  &trans        &trans
             >;
 
-            display-name = "Left";
-        };
-
-        right_layer {
-            bindings = <
-&none   &none  &none  &none   &none   &none      &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp NUMBER_0
-&trans  &none  &none  &none   &none   &none      &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
-&trans  &none  &none  &none   &none   &none      &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                      &trans  &trans  &kp SPACE  &kp SPACE  &trans        &trans
-            >;
-
-            label = "Right";
+            display-name = "Sym and num";
         };
 
         adjust_layer {
@@ -97,7 +86,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9    &kp NUMBER_0       &kp MINUS
 &trans  &none         &none         &none         &none         &none         &none         &none         &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp EQUAL
-&trans  &none         &none         &none         &none         &none         &none         &none         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &lt 5 ESCAPE
+&trans  &none         &none         &none         &none         &none         &none         &none         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &lt 4 ESCAPE
                                     &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
