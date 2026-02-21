@@ -16,12 +16,6 @@
             key-positions = <40 41>;
         };
 
-        select_line {
-            bindings = <&select_line>;
-            key-positions = <24 25>;
-            layers = <0>;
-        };
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <12 13>;
@@ -35,7 +29,17 @@
 
         toggle_nav_layer {
             bindings = <&tog 3>;
-            key-positions = <0 1>;
+            key-positions = <25 24>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <27>;
         };
     };
 
@@ -63,10 +67,10 @@
 
         sym_num_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH       &kp DOLLAR            &kp PERCENT            &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp NUMBER_0
-&trans     &kp CARET         &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
-&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN      &kp NON_US_BACKSLASH   &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                                &trans         &trans                &kp SPACE              &kp SPACE  &trans        &trans
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR            &kp PERCENT            &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp NUMBER_0
+&trans     &kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
+&trans     &kp BSLH         &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                                           &trans            &trans                &kp SPACE              &kp SPACE  &trans        &trans
             >;
 
             display-name = "Sym and num";
