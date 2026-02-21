@@ -129,6 +129,69 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        f6_6: f6_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F6_6";
+            bindings = <&kp NUMBER_6>, <&kp F6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f7_7: f7_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F7_7";
+            bindings = <&kp NUMBER_7>, <&kp F7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f8_8: f8_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F8_8";
+            bindings = <&kp NUMBER_8>, <&kp F8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f9_9: f9_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F9_9";
+            bindings = <&kp NUMBER_9>, <&kp F9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f10_0: f10_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F10_0";
+            bindings = <&kp NUMBER_0>, <&kp F10>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f11_minus: f11_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F11_MINUS";
+            bindings = <&kp MINUS>, <&kp F11>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        f12_equals: f12_equals {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F12_EQUALS";
+            bindings = <&kp EQUAL>, <&kp F12>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
     };
 
     keymap {
@@ -178,10 +241,10 @@
 
         nav_layer {
             bindings = <
-&trans  &f1_1  &f2_2  &f3_3   &f4_4   &f5_5   &kp NUMBER_6  &kp N7  &kp N8            &kp NUMBER_9           &kp NUMBER_0      &none
-&trans  &none  &none  &none   &none   &none   &none         &none   &none             &page_up_up_arrow      &none             &none
-&trans  &none  &none  &none   &none   &none   &none         &none   &home_left_arrow  &page_down_down_arrow  &end_right_arrow  &mt RIGHT_ALT ESCAPE
-                      &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &f1_1  &f2_2  &f3_3   &f4_4   &f5_5   &f6_6   &f7_7   &f8_8             &f9_9                  &f10_0             &f11_minus
+&trans  &none  &none  &none   &none   &none   &none   &none   &kp LEFT_BRACKET  &page_up_up_arrow      &kp RIGHT_BRACKET  &f12_equals
+&trans  &none  &none  &none   &none   &none   &none   &none   &home_left_arrow  &page_down_down_arrow  &end_right_arrow   &mt RIGHT_ALT ESCAPE
+                      &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Navigation";
