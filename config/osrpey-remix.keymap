@@ -73,10 +73,10 @@
 
         nav_layer {
             bindings = <
-&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0     &kp MINUS
-&trans     &none         &none         &none         &none         &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &none         &none             &none              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &lt 4 ESCAPE
-                                       &trans        &trans        &kp SPACE     &kp ENTER         &kp RIGHT_ALT      &kp RIGHT_WIN
+&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
+&trans     &none         &none         &none         &none         &none         &kp LEFT_BRACKET   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none         &trans
+&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &none         &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &trans
+                                       &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &kp ENTER          &kp RIGHT_ALT   &kp RIGHT_WIN
             >;
 
             label = "Navigation";
@@ -85,10 +85,10 @@
         fn_nav_layer {
             label = "Navigation with Fn";
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6     &kp F7         &kp F8          &kp F9          &kp F10          &kp F11
-&trans   &none   &none   &none   &none   &none      &none      &none          &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans
-&trans   &none   &none   &none   &none   &none      &none      &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
-                         &trans  &trans  &kp SPACE  &kp ENTER  &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp F12  &kp F1  &kp F2  &kp F3        &kp F4        &kp F5     &kp F6     &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
+&trans   &none   &none   &none         &none         &none      &none      &kp HOME        &kp UP_ARROW    &kp END          &none    &trans
+&trans   &none   &none   &none         &none         &none      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &trans
+                         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &kp ENTER  &kp RIGHT_ALT   &kp RIGHT_GUI
             >;
         };
     };
