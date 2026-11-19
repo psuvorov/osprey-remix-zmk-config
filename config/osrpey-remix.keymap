@@ -43,22 +43,20 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y        &kp U          &kp I       &kp O    &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F         &kp G        &kp H        &kp J          &kp K       &kp L    &kp SEMI             &mt RCTRL SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N        &kp M          &kp COMMA   &kp DOT  &mt BACKSLASH SLASH  &mt RIGHT_SHIFT ESCAPE
-                              &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 SPACE  &lt 4 ENTER  &kp BACKSPACE  &kp DELETE
+&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T      &kp Y      &kp U          &kp I       &kp O    &kp P      &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F         &kp G      &kp H      &kp J          &kp K       &kp L    &kp SEMI   &mt RCTRL SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp N      &kp M          &kp COMMA   &kp DOT  &kp SLASH  &mt RIGHT_SHIFT ESCAPE
+                              &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
 
-        sym_num_layer {
+        default_layer_ext {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR            &kp PERCENT            &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp NUMBER_0
-&trans     &kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans
-&trans     &kp BSLH         &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                           &trans            &trans                &kp SPACE              &kp SPACE  &trans        &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp INSERT  &kp RIGHT_BRACKET
+&trans     &trans  &trans  &trans  &trans  &trans  &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &kp NON_US_BACKSLASH
+&trans     &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans      &trans
+                           &trans  &trans  &trans  &trans    &trans          &trans
             >;
-
-            display-name = "Sym and num";
         };
 
         adjust_layer {
@@ -68,27 +66,6 @@
 &none  &none  &none  &none   &none        &none   &none         &none         &none         &none  &none  &none
 &none  &none  &none  &none   &none        &none   &none         &sys_reset    &none         &none  &none  &none
                      &trans  &trans       &trans  &trans        &trans        &trans
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
-&trans     &none         &none         &none         &none         &none         &kp LEFT_BRACKET   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none         &trans
-&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &none         &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &trans
-                                       &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &kp ENTER          &kp RIGHT_ALT   &kp RIGHT_WIN
-            >;
-
-            label = "Navigation";
-        };
-
-        fn_nav_layer {
-            label = "Navigation with Fn";
-            bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3        &kp F4        &kp F5     &kp F6     &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&trans   &none   &none   &none         &none         &none      &none      &kp HOME        &kp UP_ARROW    &kp END          &none    &trans
-&trans   &none   &none   &none         &none         &none      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &trans
-                         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &kp ENTER  &kp RIGHT_ALT   &kp RIGHT_GUI
             >;
         };
     };
